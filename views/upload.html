@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Rms ShareIt</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1><a href="../">Abs-Share</a></h1>
+    </header>
+    
+    <form class="form" method="post" id="form" enctype="multipart/form-data" action="">
+      <label for="file">Seleccionar archivos</label>
+      <input class="btn" type="file" id="file" name="file" placeholder="Subir archivo" multiple="true">
+      <input class="btn" type="submit" name="upload" id="submit" value="Subir archivo">
+      <input type="button" name="cancel" id="cancel" value="Cancelar" hidden="true">
+    </form>
+    <h3 hidden="true" id="label-progress" class="label-progress"></h3>
+      <ol id="fileStatus">
+
+      </ol>
+    <div id="details">
+    </div>
+  </div>
+</body>
+<script src="../assets/js/code.js" charset="utf-8"></script>
+
+</html>
